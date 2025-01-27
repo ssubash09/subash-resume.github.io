@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subash S - Resume</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1e3a8a;
+            color: white;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+        header h1 {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        header p {
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #e0f2fe;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #1e3a8a;
+            color: white;
+        }
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+        .footer-links span,
+        .footer-phone span {
+            margin-right: 5px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Profile Picture" id="profile-picture">
+        <h1 id="name">Subash S</h1>
+        <p>AWS DevOps Engineer</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>Professional Summary</h2>
+            <p>Experienced Cloud and DevOps Engineer with 3 years in AWS cloud infrastructure and automation. Expertise in developing secure, scalable file transfer systems and managing complex deployments. Skilled in AWS services, Terraform, and CI/CD pipelines with real-time troubleshooting. Proven ability to enhance system efficiency and security.</p>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Solution Architect – Associate Certified</li>
+                <li>AWS Developer – Associate Certified</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <select>
+                <option>Cloud Technologies: S3, AWS Lambda, EC2, Transfer Family, IAM, KMS, Secrets Manager, EventBridge, CloudWatch, SNS, CloudTrail, VPC, DynamoDB, RDS, CloudFormation, ECS, ECR</option>
+                <option>DevOps Tools: Terraform, CI/CD – GitLab, CodeBuild, CodePipeline, Jenkins, Docker, GitHub Actions</option>
+                <option>SCM: Git, CodeCommit, GitLab</option>
+                <option>Security: AWS IAM, Data Encryption (KMS), Secrets Manager, HashiCorp Vault</option>
+                <option>Server: Linux, Windows</option>
+                <option>Programming Language: Python</option>
+                <option>SAST: SonarQube, Snyk, Lablooter</option>
+                <option>Package Manager & Artifactory: Maven, Pip, Npm, JFrog</option>
+                <option>Ticketing Tool & Monitoring: ServiceNow, Datadog</option>
+                <option>IDE’s: Visual Studio, PyCharm</option>
+            </select>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B.E Mechanical Engineering in 2020</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <h3>HTC Global Services (2021 – Present)</h3>
+            <p><strong>Litigation Data Migration to S3</strong></p>
+            <ul>
+                <li>Played a key role in the successful migration of 3.5PB of HBase data from an on-premises server to Amazon S3, focusing on secure data transfer, integrity, and quality assurance.</li>
+                <li>Developed Terraform code from scratch for resources like IAM roles, S3, KMS, SNS, Lambda, and GitLab CI/CD pipeline with SAST and stages for both test and production environments.</li>
+                <li>Created Python scripts for efficient data transfer, implementing Sigv4 authentication, multipart upload for 5TB files, and auto checksum validation using the Python SDK.</li>
+                <li>Integrated Lambda functions to trigger SNS notifications for real-time updates on data transfer status.</li>
+                <li>Ensured data security and integrity with KMS encryption and checksum validation, successfully transferring 3.5PB of data without compromising quality.</li>
+            </ul>
+            <p><strong>Managed File Transfer (MFT) System</strong></p>
+            <ul>
+                <li>Developed a robust file transfer system for secure cloud and on-premise data movement using AWS services.</li>
+                <li>Automated transfers with AWS Lambda, Transfer Family, and S3.</li>
+                <li>Enforced security with IAM, encryption, and PGP.</li>
+                <li>Implemented monitoring with Datadog and alerts via SNS.</li>
+                <li>Enhanced scalability and efficiency, reducing manual interventions by 50% and meeting security compliance standards.</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <span>🔗</span><a href="https://www.linkedin.com/in/subash-s-engineer/" target="_blank">LinkedIn</a>
+            <span>🐙</span><a href="https://github.com/ssubash09" target="_blank">GitHub</a>
+            <span>✉️</span><a href="mailto:anandisback22@gmail.com" target="_blank">Email</a>
+        </div>
+        <div class="footer-phone">
+            <span>📞</span>+91 8072900406
+        </div>
+        <p>&copy; 2024 Subash S. All rights reserved.</p>
+    </footer>
+</body>
+</html>

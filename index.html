@@ -71,6 +71,22 @@
             border-radius: 4px;
             background-color: white;
         }
+        .resume-button {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .resume-button:hover {
+            background-color: #172554;
+        }
         footer {
             text-align: center;
             margin-top: 2rem;
@@ -145,14 +161,13 @@
                 <li>Integrated Lambda functions to trigger SNS notifications for real-time updates on data transfer status.</li>
                 <li>Ensured data security and integrity with KMS encryption and checksum validation, successfully transferring 3.5PB of data without compromising quality.</li>
             </ul>
-            <p><strong>Managed File Transfer (MFT) System</strong></p>
-            <ul>
-                <li>Developed a robust file transfer system for secure cloud and on-premise data movement using AWS services.</li>
-                <li>Automated transfers with AWS Lambda, Transfer Family, and S3.</li>
-                <li>Enforced security with IAM, encryption, and PGP.</li>
-                <li>Implemented monitoring with Datadog and alerts via SNS.</li>
-                <li>Enhanced scalability and efficiency, reducing manual interventions by 50% and meeting security compliance standards.</li>
-            </ul>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Click the button below to download my resume:</p>
+            <a href="resume.pdf" download="Subash_S_Resume.pdf" class="resume-button">
+                📄 Click Here for Resume
+            </a>
         </section>
     </div>
     <footer>
